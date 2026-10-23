@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Switzerland — Spec-Up-T Starterpack</title>
+<style>
+:root {
+  --ink: #1c2430;
+  --muted: #5c6b7a;
+  --line: #d5e0e4;
+  --card: #fff;
+  --bg: #f3f7f6;
+  --accent: #0e6b66;
+  --accent-soft: #e5f3f1;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.5 system-ui, sans-serif;
+}
+.page { max-width: 46rem; margin: 0 auto; padding: 2.25rem 1.25rem 4rem; }
+.back {
+  color: var(--accent);
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.back:hover { text-decoration: underline; }
+.spec-title {
+  margin: 1.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+h1 { margin: 0.15rem 0 0.6rem; font-size: 2rem; letter-spacing: -0.03em; }
+.lede { margin: 0 0 1.5rem; max-width: 38rem; color: var(--muted); }
+.tree { list-style: none; margin: 0; padding: 0; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.95rem 1.05rem 1rem;
+  margin: 0 0 0.8rem;
+}
+.branch[data-depth="0"] > .card { box-shadow: 0 1px 2px rgba(20, 40, 40, 0.04); }
+.trail { margin: 0 0 0.15rem; color: var(--muted); font-size: 0.82rem; }
+.name { margin: 0; font-size: 1.2rem; letter-spacing: -0.02em; }
+.branch[data-depth="0"] > .card > .name { font-size: 1.4rem; }
+.name a { color: var(--ink); text-decoration: none; }
+.name a::after { content: " →"; color: var(--accent); font-weight: 450; }
+.name a:hover { color: var(--accent); }
+.path {
+  display: inline-block;
+  margin: 0.35rem 0 0;
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #245751;
+  font-family: ui-monospace, monospace;
+  font-size: 0.78rem;
+}
+.description { margin: 0.55rem 0 0; }
+.meta { margin: 0.45rem 0 0; color: var(--accent); font-size: 0.88rem; font-weight: 600; }
+.nested {
+  margin-top: 0.95rem;
+  padding: 0.15rem 0 0 1rem;
+  border-left: 2px solid #b7d4d0;
+}
+.nested-label {
+  margin: 0 0 0.55rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+details { margin-top: 0.7rem; }
+summary { cursor: pointer; color: #345; font-size: 0.92rem; }
+.files ul, .sources ul { margin: 0.45rem 0 0; padding-left: 1.15rem; }
+.files li, .sources li { margin: 0.28rem 0; }
+.files .path, .sources .path {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #445;
+  font-size: 0.84rem;
+}
+.kind {
+  font-size: 0.75rem;
+  border: 1px solid #c9d5d8;
+  border-radius: 999px;
+  padding: 0 0.45em;
+  color: #345;
+}
+.shadow { color: var(--muted); }
+.note {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.note .path {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
+  font-size: 0.92rem;
+}
+</style>
+</head>
+<body id="variant-menu">
+<div class="page">
+<p><a class="back" href="../index.html">← Canonical specification</a></p>
+<p class="spec-title">Spec-Up-T Starterpack</p>
+<h1>Switzerland</h1>
+<p class="lede">Open a variant to read this specification in another form. A variant drawn inside another one starts from that parent. Only the files in its own folder are different.</p>
+<ol class="tree">
+<li class="branch" data-depth="0">
+<article class="card">
+
+<h2 class="name"><a href="de/index.html">German</a></h2>
+<p class="path">de</p>
+<p class="description">Finished. Introduction, terms section, closing section, soil, and compost are translated. Markup examples stay in English.</p>
+
+<details class="files">
+<summary>5 files in this folder</summary>
+<ul>
+<li><span class="path">spec-head.md</span> <span class="kind">markdown file</span> published from this folder</li>
+<li><span class="path">terms-and-definitions-intro.md</span> <span class="kind">markdown file</span> published from this folder</li>
+<li><span class="path">terms-definitions/compost.md</span> <span class="kind">markdown file</span> published from this folder</li>
+<li><span class="path">terms-definitions/soil.md</span> <span class="kind">markdown file</span> published from this folder</li>
+<li><span class="path">spec-body.md</span> <span class="kind">markdown file</span> published from this folder</li>
+</ul>
+</details>
+<details class="sources">
+<summary>Where the 14 parts of this page come from</summary>
+<ul>
+<li><span class="path">spec-head.md</span> — this folder (markdown file)</li>
+<li><span class="path">terms-and-definitions-intro.md</span> — this folder (markdown file)</li>
+<li><span class="path">terms-definitions/composability.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/compost.md</span> — this folder (markdown file)</li>
+<li><span class="path">terms-definitions/dormancy.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/fertilizer.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/greenhouse.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/mulch.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/pruning.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/seedling.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/soil.md</span> — this folder (markdown file)</li>
+<li><span class="path">terms-definitions/watering.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">example-markup-in-markdown.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">spec-body.md</span> — this folder (markdown file)</li>
+</ul>
+</details>
+
+</article>
+</li>
+<li class="branch" data-depth="0">
+<article class="card">
+
+<h2 class="name"><a href="fr/index.html">French</a></h2>
+<p class="path">fr</p>
+<p class="description">In review. The introduction has a reviewed text and an earlier AI draft that is not published. The closing section and soil are translated. Markup examples are not.</p>
+
+<details class="files">
+<summary>5 files in this folder</summary>
+<ul>
+<li><span class="path">spec-head.manual.md</span> <span class="kind">manual file</span> published from this folder</li>
+<li class="shadow"><span class="path">spec-head.ai.md</span> <span class="kind">AI rewrite</span> not published — a manual file in this folder wins</li>
+<li><span class="path">terms-and-definitions-intro.md</span> <span class="kind">markdown file</span> published from this folder</li>
+<li><span class="path">terms-definitions/soil.md</span> <span class="kind">markdown file</span> published from this folder</li>
+<li><span class="path">spec-body.md</span> <span class="kind">markdown file</span> published from this folder</li>
+</ul>
+</details>
+<details class="sources">
+<summary>Where the 14 parts of this page come from</summary>
+<ul>
+<li><span class="path">spec-head.md</span> — this folder (manual file)</li>
+<li><span class="path">terms-and-definitions-intro.md</span> — this folder (markdown file)</li>
+<li><span class="path">terms-definitions/composability.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/compost.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/dormancy.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/fertilizer.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/greenhouse.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/mulch.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/pruning.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/seedling.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/soil.md</span> — this folder (markdown file)</li>
+<li><span class="path">terms-definitions/watering.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">example-markup-in-markdown.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">spec-body.md</span> — this folder (markdown file)</li>
+</ul>
+</details>
+
+</article>
+</li>
+<li class="branch" data-depth="0">
+<article class="card">
+
+<h2 class="name"><a href="it/index.html">Italian</a></h2>
+<p class="path">it</p>
+<p class="description">Unreviewed draft. The introduction and the soil term are AI drafts, and those drafts are what is published. The terms section has only a start. The closing section is still English.</p>
+
+<details class="files">
+<summary>3 files in this folder</summary>
+<ul>
+<li><span class="path">spec-head.ai.md</span> <span class="kind">AI rewrite</span> published from this folder</li>
+<li><span class="path">terms-and-definitions-intro.md</span> <span class="kind">markdown file</span> published from this folder</li>
+<li><span class="path">terms-definitions/soil.ai.md</span> <span class="kind">AI rewrite</span> published from this folder</li>
+</ul>
+</details>
+<details class="sources">
+<summary>Where the 14 parts of this page come from</summary>
+<ul>
+<li><span class="path">spec-head.md</span> — this folder (AI rewrite)</li>
+<li><span class="path">terms-and-definitions-intro.md</span> — this folder (markdown file)</li>
+<li><span class="path">terms-definitions/composability.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/compost.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/dormancy.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/fertilizer.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/greenhouse.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/mulch.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/pruning.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/seedling.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/soil.md</span> — this folder (AI rewrite)</li>
+<li><span class="path">terms-definitions/watering.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">example-markup-in-markdown.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">spec-body.md</span> — canonical spec (markdown file)</li>
+</ul>
+</details>
+
+</article>
+</li>
+<li class="branch" data-depth="0">
+<article class="card">
+
+<h2 class="name"><a href="rm/index.html">Romansh</a></h2>
+<p class="path">rm</p>
+<p class="description">Barely started. Only an unreviewed draft of the introduction exists. Every other section is still the English source.</p>
+
+<details class="files">
+<summary>1 file in this folder</summary>
+<ul>
+<li><span class="path">spec-head.ai.md</span> <span class="kind">AI rewrite</span> published from this folder</li>
+</ul>
+</details>
+<details class="sources">
+<summary>Where the 14 parts of this page come from</summary>
+<ul>
+<li><span class="path">spec-head.md</span> — this folder (AI rewrite)</li>
+<li><span class="path">terms-and-definitions-intro.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/composability.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/compost.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/dormancy.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/fertilizer.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/greenhouse.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/mulch.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/pruning.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/seedling.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/soil.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">terms-definitions/watering.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">example-markup-in-markdown.md</span> — canonical spec (markdown file)</li>
+<li><span class="path">spec-body.md</span> — canonical spec (markdown file)</li>
+</ul>
+</details>
+
+</article>
+</li>
+</ol>
+<details class="note">
+<summary>How a file is chosen</summary>
+<p>A <span class="path">.md</span> or <span class="path">.manual.md</span> file was written by a person and is never replaced by an AI rewrite. An AI rewrite is stored as <span class="path">.ai.md</span>. When a manual file is in the same folder, that manual file is the one that is published.</p>
+</details>
+</div>
+</body>
+</html>
